@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="title" content="Check if a website is a scam or legit? | scam bunkers">
+  <meta name="description"
+    content="scam bunkers is a web tool based on a complex algorithm and machine learning that automatically assesses the trust that can be given to a website.">
+  <meta name="keywords"
+    content="website scam check, check a website, check website reputation, check website trust, fake websites detector, website reputation check google, fake website checker free, how to check if a website is safe to buy from, website safety check google ">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Check if a website is a scam or legit? | scam bunkers">
+  <meta property="og:site_name" content="scam bunkers">
+  <meta property="og:url" content="https://scambunkers.com">
+  <meta property="og:image" content="assets/images/scambunkers.png">
+  <meta property="article:author" content="https://www.facebook.com/cyberbunkers/">
+
+  <title>Scambunkers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/images/bunkers.png" rel="icon" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="assets/js/script.js">
+  </script>
+<script data-ad-client="ca-pub-9661054794355185" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <style type="text/css">
+    .nav-link {
+      color: white;
+    }
+
+    a {
+      color: #18bc9c;
+      text-decoration: none;
+    }
+
+    #domain {
+      height: 48px;
+      border-radius: 0px;
+    }
+
+    .jumbotron {
+      background-color: transparent;
+    }
+
+    .btn-success {
+      border-radius: 0px;
+    }
+
+    .active {
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class=" container"><a class="navbar-brand" href="index.html"><img alt="" height="45"
+          src="assets/images/logo.png" /></a>
+      <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+        data-target="#navbarNav" data-toggle="collapse" type="button">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="index.html"
+              style="padding-right: 30px; font-size: 18px;">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pages/about.html"
+              style="padding-right: 30px; font-size: 18px;">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contact.html"
+              style="padding-right: 30px; font-size: 18px;">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="container">
+    </div>
+    <div class="card container" style="margin-top: 40px;padding: 0px;border-radius: 0px;">
+      <div class="card-body">
+        <div class="jumbotron">
+          <h1>Check if a <span style="color: orange;" id="webName">website</span> is a scam or safe?
+          </h1>
+          <p class="hidden-xs">This service helps you detect potentially malicious websites.
+          </p>
+          <p><strong>Check the online reputation/safety of a website</strong>.
+          </p>
+          <div class="form-container">
+            <form class="form" id="header-form" onsubmit="return homePageFormSubmit();" role="form">
+              <div class="input-group search-field">
+                <input class="form-control input-lg" id="domain" name="site" placeholder="Enter website or URL here"
+                  required="" type="text" /> <span class="input-group-btn">
+                  <button class="btn btn-lg btn-success" type="submit">Search
+                  </button> </span>
+              </div>
+            </form>
+            <span id="error_msg" style="color: red;" hidden>not a valid host/domain</span>
+          </div>
+          <p style="font-size: 12px;">Data submitted here is shared with security companies (<a href="#" rel="nofollow"
+              target="_blank">terms of use</a>).
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="padding: 30px 0px 30px 0px;">
+      <div class="row">
+        <div class="col-sm-4" style="margin:auto">
+          <div class="card" style="border-radius: 0px;padding: 20px;">
+            <div class="card-body">
+              <h3 style="font-weight: bold;">Website Trust Score
+              </h3>
+              <p>The trust score is a number between 100 (safe) and 0 (dangerous) based on the
+                results
+                of our security checks. The trust score can better help you spot potentially
+                unsafe
+                websites more easily. A high trust score (i.e 80) means the website may be
+                potentially safe and a low trust score (i.e 20) means the site may be unsafe.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4" style="margin:auto">
+          <div class="card" style="border-radius: 0px;padding: 20px;">
+            <div class="card-body">
+              <h3 style="font-weight: bold;">Smart Shop Analysis
+              </h3>
+              <p>We created a unique algorithm to detect potentially unsafe online shops. We can
+                identify known fake web shops, suspended web shops (mostly due to fraudulent
+                activities), suspicious domain names that use trademarked words, potential
+                countries
+                of origin (to detect China-based web shops), and more!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4" style="margin:auto">
+          <div class="card" style="border-radius: 0px;padding: 20px;">
+            <div class="card-body">
+              <h3 style="font-weight: bold;">Multiple Blacklists
+              </h3>
+              <p>You can analyze a website through 30+ blacklist engines and online website
+                reputation
+                services to facilitate the detection of fraudulent and malicious websites. Our
+                algorithms use ai technologies to deeply analyze the website content to find out
+                if
+                it matches our intelligent rules used to spot potentially unsafe websites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container">
+      
+      <input type="hidden" name="IL_IN_ARTICLE">
+    </div>
+    <footer>
+      <div class="card" style="border-radius: 0px; padding: 20px 0px 10px 0px;">
+        <div class="card-body container">
+          <div>
+            <p class="text-muted">&copy; 2020 Scambunkers | All rights reserved
+              <br />
+              <a href="pages/privacy_services.html" rel="nofollow" target="_blank">Privacy
+                Policy</a> |
+              <a href="pages/privacy_services.html" rel="nofollow" target="_blank">Terms of
+                Service</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
