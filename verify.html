@@ -195,7 +195,7 @@
         <h1>Verify you are human</h1>
         <div class="lock-icon" id="lockIcon">🔒</div>
         <div id="pinContainers"></div>
-        <button id="unlockButton">Try to Unlock</button>
+        <button id="unlockButton">Verify</button>
         <button id="resetButton">Reset</button>
         <div class="game-info">
             <p>Attempts: <span id="attempts">0</span></p>
@@ -260,7 +260,7 @@
             document.getElementById('lockIcon').textContent = isLocked ? '🔒' : '🔓';
             const gameStatus = document.getElementById('gameStatus');
             if (!isLocked) {
-                gameStatus.textContent = 'UnLock Successfully!';
+                gameStatus.textContent = 'Verification Successfully!';
                 gameStatus.style.color = 'var(--success-color)';
             } else {
                 gameStatus.textContent = 'Keep trying!';
